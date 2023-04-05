@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
+
+/*ELEMENTS:*/
+
+body{
+    background-color: rgb(15, 15, 15);
+    background-image: url(img/background.png); background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+text, P{
+    font-family: 'Readex Pro', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.title{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20%;
+    animation: opening 6s;
+    animation-fill-mode: forwards;
+}
+
+.subtitle{
+    font-size: 30px;
+    text-align: center;
+    animation: opening 6s;
+    animation-fill-mode: forwards;
+}
+
+.arrow{
+    position: absolute;
+    margin-top: 80px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: openingArrow 5s;
+    animation-fill-mode: forwards;
+}
+
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.jslogo{
+    width: 200px; height: 200px;
+    background-image: url(img/jslogo.png);
+    background-size: cover;
+}
+
+.pythonlogo{
+    width: 200px; height: 200px;
+    background-image: url(img/pythonlogo.png);
+    background-size: cover;
+}
+
+.clogo{
+    width: 200px; height: 200px;
+    background-image: url(img/clogo.png);
+    background-size: cover;
+}
+
+.topicsTitle{
+    font-size: 30px;
+}
+
+.topics{
+    font-size: 20px;
+}
+
+.examplesDiv{
+    margin-top: 15%;
+}
+
+.examples{
+    font-size: 30px;
+}
+
+.examples:hover{
+    cursor: pointer;
+    font-size: 33px;
+}
+
+.instalogo{
+    height: 30px;
+    margin-left: 23px; margin-top: 10px;
+}
+
+.ytlogo{
+    height: 50px;
+    margin-left: 20px; margin-top: 1px;
+}
+
+.emaillogo{
+    height: 40px;
+    margin-left: 18px; margin-top: 6px;
+}
+
+/*DIVS:*/
+
+.invisible{
+    display: none;
+    opacity: 0%;
+}
+
+.maxContainer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.fadeIn{
+    display: block !important;
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+}
+
+.fadeOut{
+    display: block !important;
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+.fadeOutNone{
+    /*display: block !important;*/
+    animation: fadeOutNone 1s;
+    animation-fill-mode: forwards;
+}
+
+.hub{
+    animation: fadeup 3s;
+    animation-fill-mode: forwards;
+}
+
+.hub2{
+    animation: fadeup2 4s;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+.none{
+    display: none !important;
+}
+
+.presentationText{
+    text-align: center;
+    flex: 1;
+    margin-top: -4%;
+}
+
+.programmingButton{
+    text-align: center;
+    flex: 1;
+}
+
+.programmingText{
+    font-size: 30px;
+}
+
+.programmingText:hover{
+    cursor: pointer;
+    font-size: 33px;
+}
+
+.curriculumButton{
+    text-align: center;
+    font-size: 30px;
+    flex: 1;
+}
+
+.curriculumText{
+    font-size: 30px;
+}
+
+.curriculumText:hover{
+    cursor: pointer;
+    font-size: 33px;
+}
+
+.language{
+    flex: 1;
+    text-align: -webkit-center;
+    margin-top: 10%;
+}
+
+.curriculum{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.img{
+    flex: 1;
+    text-align: -webkit-center;
+}
+
+.img:hover{
+    cursor: pointer;
+}
+
+.projectDesc{
+    flex: 1;
+}
+
+.projectDescText{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 20px;
+}
+
+.projects{
+    display: flex;
+    margin-top: 6%;
+}
+
+.arrows{
+    z-index: 2;
+    position: sticky;
+    margin-top: 20px;
+    display: none;
+    opacity: 0%;
+}
+
+.singleArrow{
+    margin-left: 10px;
+    color: white;
+    font-size: 30px !important;
+}
+
+.singleArrow:hover{
+    cursor: pointer;
+}
+
+.contactContainer{
+    width: 200px; height: 50px;
+    border-radius: 25px;
+    margin-top: 7%;
+    background-color: rgba(128, 128, 128, 0.305);
+    display: flex;
+}
+
+.contact{
+    display: flex;
+}

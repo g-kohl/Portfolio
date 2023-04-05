@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>G. Kohl</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="animations.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body onscroll="scroll()">
+        <div id="arrowsDiv" class="arrows">
+            <i onclick="arrow(1)" class="fa singleArrow">&#xf053;</i>
+            <i onclick="arrow(2)" class="fa singleArrow">&#xf054;</i>
+        </div>
+        <div id="maxContainer" class="maxContainer">
+            <div id="hub">
+                <div class="title"><text>Oi, me chamo Guilherme Kohl!</text></div>
+                <div class="subtitle"><text>e não sou o cara mais criativo do mundo, mas...</text></div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="hub2" class="none">
+                <div style="display: flex;">
+                    <div class="programmingButton">
+                        <text class="programmingText" onclick="programming()">Conhecimentos</text>
+                    </div>
+                    <div class="presentationText">
+                        <P>...gosto de dar vida às minhas ideias.</P>
+                        <P>Sou um jovem estudante que ama a programação e a música e concilio essas atividades e outros hábitos através de uma rotina planejada. Gosto de me deselvolver pessoalmente e de aprender sobre como tornar a minha vida e a dos outros mais eficiente. </P>
+                        <P>Atualmente, crio projetos para uso pessoal e público no github a fim de estudo, mas planejo exercer a função de programador profissionalmente.</P>
+                    </div>
+                    <div class="curriculumButton">
+                        <text class="curriculumText" onclick="curriculum()">Currículo</text>
+                    </div>
+                </div>
+            </div>
+            <center>
+            <div id="contact" class="none">
+                <div class="contact">
+                    <a target="_blank" href="https://www.instagram.com/g.kohl/"><img class="instalogo img" src="img/insta-icon.png"></a>
+                    <a target="_blank" href="https://www.youtube.com/@guilhermekohl"><img class="ytlogo img" src="img/youtube-icon.png"></a>
+                    <a target="_blank" onclick="email()"><img class="emaillogo img" src="img/email-icon.webp"></a>
+                </div>
+            </div>
+            </center>
+        </div>
+        <div id="maxContainerProgramming" class="maxContainer invisible">
+            <div style="display: flex;">
+                <div id="js" class="language">
+                    <div class="jslogo"></div>
+                    <div>
+                        <p class="topicsTitle">Java Script</p>
+                        <p class="topics">experiência em full-stack</p>
+                        <p class="topics">projetos: web sites</p>
+                    </div>
+                </div>
+                <div id="python" class="language" style="opacity: 0%">
+                    <div class="pythonlogo"></div>
+                    <div>
+                        <p class="topicsTitle">Python</p>
+                        <p class="topics">entendimento dos comandos básicos</p>
+                        <p class="topics">projetos: bots para discord</p>
+                    </div>
+                    <div class="examplesDiv"><text id="examples" style="opacity: 0%;" class="examples" onclick="examples()">Exemplos</text></div>
+                </div>
+                <div id="c" class="language" style="opacity: 0%">
+                    <div class="clogo"></div>
+                    <div>
+                        <p class="topicsTitle">C</p>
+                        <p class="topics">domínio da lógica</p>
+                        <p class="topics">projetos: programação de robôs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="maxContainerCurriculum" class="maxContainer invisible">
+            <div id="curriculum" class="curriculum"><img src="img/curriculo.png"></div>
+        </div>
+        <div id="maxContainerExamples" class="maxContainer invisible">
+            <div class="projects" id="chessProject">
+                <div class="img">
+                    <a target="_blank" href="https://g-kohl.github.io/Chess/">
+                        <img src="img/chess.PNG" width="80%" height="100%" >
+                    </a>
+                </div>
+                <div class="projectDesc">
+                    <div class="projectDescText">
+                        <p>Um site para jogar xadrez do seu jeito</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="projects" id="metronomeProject">
+                <div class="projectDesc">
+                    <div class="projectDescText">
+                        <p>Um metrônomo preciso com diferentes funções</p> 
+                    </div>
+                </div>
+                <div class="img">
+                    <a target="_blank" href="https://g-kohl.github.io/Metronome/">
+                        <img src="img/metronome.PNG" width="80%" height="100%" >
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
